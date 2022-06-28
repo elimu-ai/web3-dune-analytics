@@ -1,6 +1,8 @@
 # web3-dune-analytics
 
-## Uniswap Liquidity
+Dune Analytics queries for https://rewards.elimu.ai
+
+## Uniswap Liquidity 🦄
 
 https://dune.com/queries/970563/1681039
 
