@@ -126,7 +126,7 @@ SELECT
   weth_price,
   weth,
   weth * weth_price AS weth_liquidity,
-  elimu * elimu_price + weth * weth_price AS "Uniswap elimu.ai-WETH Pool $TVL"
+  elimu * elimu_price + weth * weth_price AS "TVL"
 FROM
   tokens t
   INNER JOIN elimu_price p1 ON p1.datex = t.datex
