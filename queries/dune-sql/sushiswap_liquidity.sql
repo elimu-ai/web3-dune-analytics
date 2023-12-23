@@ -39,7 +39,7 @@ FROM(
         CAST(value AS int256) AS amount
     FROM erc20_ethereum.evt_Transfer tr 
     WHERE contract_address = 0xe29797910D413281d2821D5d9a989262c8121CC2
-    AND "to" = 0xa0d230Dca71a813C68c278eF45a7DaC0E584EE61
+    AND "to" = 0x0E2a3d127EDf3BF328616E02F1DE47F981Cf496A
             
     UNION ALL 
             
@@ -48,7 +48,7 @@ FROM(
         -1 * CAST(value AS int256) AS amount
     FROM erc20_ethereum.evt_Transfer tr 
     WHERE contract_address = 0xe29797910D413281d2821D5d9a989262c8121CC2
-    AND "from" = 0xa0d230Dca71a813C68c278eF45a7DaC0E584EE61
+    AND "from" = 0x0E2a3d127EDf3BF328616E02F1DE47F981Cf496A
     )
     GROUP BY day
     )
@@ -64,7 +64,7 @@ FROM(
         CAST(value AS int256) AS amount
     FROM erc20_ethereum.evt_Transfer tr 
     WHERE contract_address = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
-    AND "to" = 0xa0d230Dca71a813C68c278eF45a7DaC0E584EE61
+    AND "to" = 0x0E2a3d127EDf3BF328616E02F1DE47F981Cf496A
             
     UNION ALL 
             
@@ -73,7 +73,7 @@ FROM(
         -1 * CAST(value AS int256) AS amount
     FROM erc20_ethereum.evt_Transfer tr 
     WHERE contract_address = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
-    AND "from" = 0xa0d230Dca71a813C68c278eF45a7DaC0E584EE61
+    AND "from" = 0x0E2a3d127EDf3BF328616E02F1DE47F981Cf496A
     )
     GROUP BY day
 )
